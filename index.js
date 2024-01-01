@@ -110,12 +110,30 @@ console.log("total profit ="+totalProfit);
 // }
 // console.log(monthChangesArray.length);
 
+// variables created
 var totalChange=0
+var greatestIncrease=0
+var biggestMonthProfit=0
+var greatestDecrease=0
+var biggestMonthLoss=0
+
+// calculate total change every month and calculate average per month
 for (i=0 ; i<finances.length-1; i++) {
   monthChangeValue = finances[i+1][1]-finances[i][1];
   totalChange = totalChange+monthChangeValue;
+  if (monthChangeValue >= greatestIncrease) {
+    greatestIncrease = monthChangeValue;
+    biggestMonthProfit = finances[i+1][0];
+  } else if (monthChangeValue <= greatestDecrease) {
+    greatestDecrease = monthChangeValue;
+    biggestMonthLoss = finances[i+1][0];
+  }
 }
 console.log("Total changes overall : "+totalChange);
 var averageChange = totalChange / (finances.length-1);
+console.log ("biggest monthly increase: "+greatestIncrease+" in "+biggestMonthProfit);
+console.log ("biggest loss: "+greatestDecrease+" in "+biggestMonthLoss);
+
+// result converted in 2 decimals after "," only
 averageChange = averageChange.toFixed(2);
 console.log("Monthly Average change : "+averageChange);
