@@ -86,3 +86,36 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// create necessary variable and calculate number of months
+var totalNoMonths = finances.length;
+console.log("total no months = "+totalNoMonths);
+
+// create necesary variable and calculate profit using a for loop
+var profit = 0
+for (i=0 ; i<finances.length; i++) {
+  var element = finances[i];
+  profit = profit + element[1];
+}
+var totalProfit = profit;
+console.log("total profit ="+totalProfit);
+
+// // creare a new array with changes between months
+// var monthChange = 0;
+// var monthChangesArray = [];
+// for (i=0 ; i<finances.length-1; i++) {
+//   monthChangeValue = finances[i+1][1]-finances[i][1];
+//   monthChangesArray.push(monthChangeValue);
+//   return monthChangesArray;
+// }
+// console.log(monthChangesArray.length);
+
+var totalChange=0
+for (i=0 ; i<finances.length-1; i++) {
+  monthChangeValue = finances[i+1][1]-finances[i][1];
+  totalChange = totalChange+monthChangeValue;
+}
+console.log("Total changes overall : "+totalChange);
+var averageChange = totalChange / (finances.length-1);
+averageChange = averageChange.toFixed(2);
+console.log("Monthly Average change : "+averageChange);
