@@ -16,7 +16,7 @@ It tests the knowledge gained in the week, especially the implementation of java
 
 ## Installation
 
-The repository is on public domain and the deployed webpage can be access online at ... where it was deployed using GitHub 
+The repository is on public domain and the deployed webpage can be access online at https://docbogdanc.github.io/Console-Finances-CristianB/ where it was deployed using GitHub 
 
 
 ## Usage
