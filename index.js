@@ -87,14 +87,15 @@ var finances = [
   ["Feb-2017", 671099],
 ];
 
+// displaying the title in console
 console.log("Financial analysis");
 console.log("------------------------");
 
-// create necessary variable and calculate number of months
+// create necessary variable, calculate number of months and display in console
 var totalNoMonths = finances.length;
 console.log("Total Months: " + totalNoMonths);
 
-// create necesary variable and calculate profit using a "for" loop
+// create necesary variable and calculate profit using a "for" loop and display result in console
 var profit = 0;
 for (i = 0; i < finances.length; i++) {
   var element = finances[i];
@@ -102,7 +103,7 @@ for (i = 0; i < finances.length; i++) {
 }
 console.log("Total: $" + profit);
 
-// variables created
+// create neccesary variables
 var totalChange = 0;
 var greatestIncrease = 0;
 var biggestMonthProfit = 0;
@@ -136,6 +137,7 @@ console.log(
     greatestIncrease +
     ")"
 );
+
 console.log(
   "Greatest Decrease in Profits/Losses: " +
     biggestMonthLoss +
