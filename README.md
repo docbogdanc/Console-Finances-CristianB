@@ -7,7 +7,7 @@ Financial analysis tool - part of Bootcamp challenge
 
 This Project was created for bootcamp challenge.
 
-It tests the knowledge gained in the week, especially the implementation of javascript. 
+It tests the knowledge gained in the last week, especially the implementation of javascript. 
 
 
 ![image of results](./images/Screenshot.png)
@@ -32,10 +32,11 @@ The code is free to be used according to the licence condition (please see the l
   
 
 
-- w3schools.com from where information was used to understand the syntax for:
+- w3schools.com from where the information was used to understand the syntax for:
     - Format a Number with Two Decimals 
  
    https://www.w3schools.com/
+
 
 
 - Markdown Guide used for styling the readme.md
