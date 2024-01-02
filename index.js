@@ -100,18 +100,7 @@ for (i = 0; i < finances.length; i++) {
   var element = finances[i];
   profit = profit + element[1];
 }
-
 console.log("Total: $" + profit);
-
-// // create a new array with changes between months
-// var monthChange = 0;
-// var monthChangesArray = [];
-// for (i=0 ; i<finances.length-1; i++) {
-//   monthChangeValue = finances[i+1][1]-finances[i][1];
-//   monthChangesArray.push(monthChangeValue);
-//   return monthChangesArray;
-// }
-// console.log(monthChangesArray.length);
 
 // variables created
 var totalChange = 0;
@@ -120,7 +109,7 @@ var biggestMonthProfit = 0;
 var greatestDecrease = 0;
 var biggestMonthLoss = 0;
 
-// calculate total change every month, calculate average per month, max profit and max loss
+// calculate total change every month, max profit and max loss
 for (i = 0; i < finances.length - 1; i++) {
   monthChangeValue = finances[i + 1][1] - finances[i][1];
   totalChange = totalChange + monthChangeValue;
@@ -133,7 +122,7 @@ for (i = 0; i < finances.length - 1; i++) {
   }
 }
 
-// display results in console
+// calculate average per month and display results in console
 var averageChange = totalChange / (finances.length - 1);
 averageChange = averageChange.toFixed(2); // average result converted to 2 decimals after ","
 console.log("Average Change:  " + averageChange);
