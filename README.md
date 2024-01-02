@@ -7,7 +7,8 @@ Financial analysis tool - part of Bootcamp challenge
 
 This Project was created for bootcamp challenge.
 
-It tests the knowledge gained in the last week, especially the implementation of javascript. 
+It tests the knowledge gained in the last week, especially the implementation of javascript. It takes an array of arrays provided by Bootcamp resources and calculate some useful statistics to demonstrate the knowledge gained in Javascript.
+
 
 
 ![image of results](./images/Screenshot.png)
